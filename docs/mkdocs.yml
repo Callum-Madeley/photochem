@@ -1,0 +1,18 @@
+site_name: photochem
+
+nav:
+- photochem:
+  - Installation: installation.md
+  - Tutorials:
+    - photochem:
+      - Tutorial_ya: Tutorial.ipynb
+    - clima:
+      - gettings_started.md
+
+theme:
+  name: readthedocs
+  navigation_depth: 4
+
+plugins:
+- mkdocs-jupyter:
+    ignore_h1_titles: True

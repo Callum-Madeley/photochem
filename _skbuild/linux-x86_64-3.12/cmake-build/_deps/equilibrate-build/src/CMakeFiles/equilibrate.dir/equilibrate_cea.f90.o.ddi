@@ -1,0 +1,28 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/equilibrate-build/src/CMakeFiles/equilibrate.dir/equilibrate_cea.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/equilibrate_cea.mod",
+					"is-interface" : true,
+					"logical-name" : "equilibrate_cea.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "equilibrate_const.mod"
+				},
+				{
+					"logical-name" : "equilibrate_yaml.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

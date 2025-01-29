@@ -1,0 +1,37 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/clima-build/src/CMakeFiles/clima.dir/radtran/clima_radtran.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/clima_radtran.mod",
+					"is-interface" : true,
+					"logical-name" : "clima_radtran.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "clima_const.mod"
+				},
+				{
+					"logical-name" : "clima_eqns.mod"
+				},
+				{
+					"logical-name" : "clima_radtran_radiate.mod"
+				},
+				{
+					"logical-name" : "clima_radtran_types.mod"
+				},
+				{
+					"logical-name" : "clima_types.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

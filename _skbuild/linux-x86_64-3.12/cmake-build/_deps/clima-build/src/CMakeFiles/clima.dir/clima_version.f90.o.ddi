@@ -1,0 +1,20 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/clima-build/src/CMakeFiles/clima.dir/clima_version.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/clima_version.mod",
+					"is-interface" : true,
+					"logical-name" : "clima_version.mod"
+				}
+			],
+			"requires" : []
+		}
+	],
+	"version" : 0
+}

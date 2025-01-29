@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/dop853-subbuild/CMakeFiles/dop853-populate"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/dop853-subbuild/CMakeFiles/dop853-populate.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/dop853-subbuild/CMakeFiles/dop853-populate-complete.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/dop853-subbuild/dop853-populate-prefix/src/dop853-populate-stamp/dop853-populate-build.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/dop853-subbuild/dop853-populate-prefix/src/dop853-populate-stamp/dop853-populate-configure.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/dop853-subbuild/dop853-populate-prefix/src/dop853-populate-stamp/dop853-populate-download.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/dop853-subbuild/dop853-populate-prefix/src/dop853-populate-stamp/dop853-populate-install.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/dop853-subbuild/dop853-populate-prefix/src/dop853-populate-stamp/dop853-populate-mkdir.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/dop853-subbuild/dop853-populate-prefix/src/dop853-populate-stamp/dop853-populate-patch.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/dop853-subbuild/dop853-populate-prefix/src/dop853-populate-stamp/dop853-populate-test.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/dop853-subbuild/dop853-populate-prefix/src/dop853-populate-stamp/dop853-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"dop853-populate"
+		],
+		"name" : "dop853-populate"
+	}
+}

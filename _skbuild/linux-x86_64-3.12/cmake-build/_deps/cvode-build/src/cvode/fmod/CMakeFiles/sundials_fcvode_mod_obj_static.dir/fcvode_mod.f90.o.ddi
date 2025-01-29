@@ -1,0 +1,37 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/cvode-build/src/cvode/fmod/CMakeFiles/sundials_fcvode_mod_obj_static.dir/fcvode_mod.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "fortran_STATIC/fcvode_mod.mod",
+					"is-interface" : true,
+					"logical-name" : "fcvode_mod.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "fsundials_linearsolver_mod.mod"
+				},
+				{
+					"logical-name" : "fsundials_matrix_mod.mod"
+				},
+				{
+					"logical-name" : "fsundials_nonlinearsolver_mod.mod"
+				},
+				{
+					"logical-name" : "fsundials_nvector_mod.mod"
+				},
+				{
+					"logical-name" : "fsundials_types_mod.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

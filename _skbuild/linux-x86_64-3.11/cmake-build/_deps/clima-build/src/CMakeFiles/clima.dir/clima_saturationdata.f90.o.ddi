@@ -1,0 +1,31 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/clima-build/src/CMakeFiles/clima.dir/clima_saturationdata.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/clima_saturationdata.mod",
+					"is-interface" : true,
+					"logical-name" : "clima_saturationdata.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "clima_const.mod"
+				},
+				{
+					"logical-name" : "fortran_yaml_c_types.mod"
+				},
+				{
+					"logical-name" : "forwarddiff.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/data/cjm267/.conda/envs/photochem_conda/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-subbuild/cvode-populate-prefix/src/cvode-populate-stamp/download-cvode-populate.cmake;COMMAND;/data/cjm267/.conda/envs/photochem_conda/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-subbuild/cvode-populate-prefix/src/cvode-populate-stamp/verify-cvode-populate.cmake;COMMAND;/data/cjm267/.conda/envs/photochem_conda/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-subbuild/cvode-populate-prefix/src/cvode-populate-stamp/extract-cvode-populate.cmake
+source_dir=/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-src
+work_dir=/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps
+url(s)=https://github.com/LLNL/sundials/releases/download/v5.7.0/cvode-5.7.0.tar.gz
+hash=
+      no_extract=
+

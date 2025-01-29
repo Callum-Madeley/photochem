@@ -1,0 +1,4 @@
+ninja_dyndep_version = 1.0
+build _deps/cvode-build/src/sunmatrix/sparse/fmod/CMakeFiles/sundials_fsunmatrixsparse_mod_obj_static.dir/fsunmatrix_sparse_mod.f90.o | fortran_STATIC/fsunmatrix_sparse_mod.mod: dyndep | fortran_STATIC/fsundials_matrix_mod.mod fortran_STATIC/fsundials_nvector_mod.mod fortran_STATIC/fsundials_types_mod.mod
+  restat = 1
+

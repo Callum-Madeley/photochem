@@ -1,0 +1,17 @@
+{
+	"modules" : 
+	{
+		"my_module.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/CMakeFiles/FortranCInterface/my_module.mod",
+			"is-private" : false
+		},
+		"mymodule.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/CMakeFiles/FortranCInterface/mymodule.mod",
+			"is-private" : false
+		}
+	},
+	"references" : {},
+	"usages" : {}
+}

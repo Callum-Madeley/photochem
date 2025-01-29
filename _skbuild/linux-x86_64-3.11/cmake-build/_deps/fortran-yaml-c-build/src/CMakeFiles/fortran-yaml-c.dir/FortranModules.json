@@ -1,0 +1,22 @@
+{
+	"modules" : 
+	{
+		"fortran_yaml_c.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/fortran_yaml_c.mod",
+			"is-private" : false
+		},
+		"fortran_yaml_c_interface.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/fortran_yaml_c_interface.mod",
+			"is-private" : false
+		},
+		"fortran_yaml_c_types.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/fortran_yaml_c_types.mod",
+			"is-private" : false
+		}
+	},
+	"references" : {},
+	"usages" : {}
+}

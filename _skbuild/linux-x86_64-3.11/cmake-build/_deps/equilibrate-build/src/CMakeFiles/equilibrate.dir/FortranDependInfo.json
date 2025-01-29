@@ -1,0 +1,56 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Release",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-build/src",
+	"dir-cur-src" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-src/src",
+	"dir-top-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build",
+	"dir-top-src" : "/data/cjm267/photochem",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"_deps/libyaml-src/include",
+		"_deps/libyaml-build/include"
+	],
+	"language" : "Fortran",
+	"linked-target-dirs" : 
+	[
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/fortran-yaml-c-build/src/CMakeFiles/fortran-yaml-c.dir"
+	],
+	"module-dir" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules",
+	"sources" : 
+	{
+		"_deps/equilibrate-build/src/CMakeFiles/equilibrate.dir/equilibrate.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-src/src/equilibrate.f90"
+		},
+		"_deps/equilibrate-build/src/CMakeFiles/equilibrate.dir/equilibrate_cea.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-src/src/equilibrate_cea.f90"
+		},
+		"_deps/equilibrate-build/src/CMakeFiles/equilibrate.dir/equilibrate_const.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-src/src/equilibrate_const.f90"
+		},
+		"_deps/equilibrate-build/src/CMakeFiles/equilibrate.dir/equilibrate_version.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-build/src/equilibrate_version.f90"
+		},
+		"_deps/equilibrate-build/src/CMakeFiles/equilibrate.dir/equilibrate_yaml.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-src/src/equilibrate_yaml.f90"
+		}
+	},
+	"submodule-ext" : ".smod",
+	"submodule-sep" : "@"
+}

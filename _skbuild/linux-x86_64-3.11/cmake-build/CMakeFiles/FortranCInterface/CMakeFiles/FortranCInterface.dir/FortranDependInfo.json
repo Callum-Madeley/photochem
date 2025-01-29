@@ -1,0 +1,42 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Release",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/CMakeFiles/FortranCInterface",
+	"dir-cur-src" : "/data/cjm267/.conda/envs/photochem_conda/share/cmake-3.31/Modules/FortranCInterface",
+	"dir-top-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/CMakeFiles/FortranCInterface",
+	"dir-top-src" : "/data/cjm267/.conda/envs/photochem_conda/share/cmake-3.31/Modules/FortranCInterface",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "Fortran",
+	"linked-target-dirs" : 
+	[
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/CMakeFiles/FortranCInterface/CMakeFiles/myfort.dir"
+	],
+	"module-dir" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/CMakeFiles/FortranCInterface",
+	"sources" : 
+	{
+		"CMakeFiles/FortranCInterface.dir/call_mod.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/.conda/envs/photochem_conda/share/cmake-3.31/Modules/FortranCInterface/call_mod.f90"
+		},
+		"CMakeFiles/FortranCInterface.dir/call_sub.f.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/.conda/envs/photochem_conda/share/cmake-3.31/Modules/FortranCInterface/call_sub.f"
+		},
+		"CMakeFiles/FortranCInterface.dir/main.F.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/.conda/envs/photochem_conda/share/cmake-3.31/Modules/FortranCInterface/main.F"
+		}
+	},
+	"submodule-ext" : ".smod",
+	"submodule-sep" : "@"
+}

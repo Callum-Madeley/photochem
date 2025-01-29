@@ -1,0 +1,25 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/futils-build/src/CMakeFiles/futils.dir/futils_brent.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/futils_brent.mod",
+					"is-interface" : true,
+					"logical-name" : "futils_brent.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

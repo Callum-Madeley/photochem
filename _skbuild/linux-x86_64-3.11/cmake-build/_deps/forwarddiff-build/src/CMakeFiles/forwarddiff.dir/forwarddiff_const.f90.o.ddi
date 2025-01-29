@@ -1,0 +1,25 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/forwarddiff-build/src/CMakeFiles/forwarddiff.dir/forwarddiff_const.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/forwarddiff_const.mod",
+					"is-interface" : true,
+					"logical-name" : "forwarddiff_const.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

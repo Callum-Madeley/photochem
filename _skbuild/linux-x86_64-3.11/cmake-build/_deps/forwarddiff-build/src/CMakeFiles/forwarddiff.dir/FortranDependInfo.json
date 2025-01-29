@@ -1,0 +1,44 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Release",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/forwarddiff-build/src",
+	"dir-cur-src" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/forwarddiff-src/src",
+	"dir-top-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build",
+	"dir-top-src" : "/data/cjm267/photochem",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "Fortran",
+	"linked-target-dirs" : [],
+	"module-dir" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules",
+	"sources" : 
+	{
+		"_deps/forwarddiff-build/src/CMakeFiles/forwarddiff.dir/forwarddiff.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/forwarddiff-src/src/forwarddiff.f90"
+		},
+		"_deps/forwarddiff-build/src/CMakeFiles/forwarddiff.dir/forwarddiff_const.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/forwarddiff-src/src/forwarddiff_const.f90"
+		},
+		"_deps/forwarddiff-build/src/CMakeFiles/forwarddiff.dir/forwarddiff_derivative.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/forwarddiff-src/src/forwarddiff_derivative.f90"
+		},
+		"_deps/forwarddiff-build/src/CMakeFiles/forwarddiff.dir/forwarddiff_dual.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/forwarddiff-src/src/forwarddiff_dual.f90"
+		}
+	},
+	"submodule-ext" : ".smod",
+	"submodule-sep" : "@"
+}

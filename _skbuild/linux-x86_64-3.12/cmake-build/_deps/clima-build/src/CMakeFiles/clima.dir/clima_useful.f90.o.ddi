@@ -1,0 +1,31 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/clima-build/src/CMakeFiles/clima.dir/clima_useful.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/clima_useful.mod",
+					"is-interface" : true,
+					"logical-name" : "clima_useful.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "clima_const.mod"
+				},
+				{
+					"logical-name" : "h5fortran.mod"
+				},
+				{
+					"logical-name" : "minpack_module.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

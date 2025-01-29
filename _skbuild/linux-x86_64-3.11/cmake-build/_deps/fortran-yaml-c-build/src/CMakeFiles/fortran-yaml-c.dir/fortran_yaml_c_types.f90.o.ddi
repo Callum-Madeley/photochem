@@ -1,0 +1,25 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/fortran-yaml-c-build/src/CMakeFiles/fortran-yaml-c.dir/fortran_yaml_c_types.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/fortran_yaml_c_types.mod",
+					"is-interface" : true,
+					"logical-name" : "fortran_yaml_c_types.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

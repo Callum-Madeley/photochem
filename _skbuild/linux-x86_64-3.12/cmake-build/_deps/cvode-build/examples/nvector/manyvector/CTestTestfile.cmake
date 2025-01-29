@@ -1,0 +1,12 @@
+# CMake generated Testfile for 
+# Source directory: /data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-src/examples/nvector/manyvector
+# Build directory: /data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-build/examples/nvector/manyvector
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(test_nvector_manyvector_1000_100_0 "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-build/examples/nvector/manyvector/test_nvector_manyvector" "1000" "100" "0")
+set_tests_properties(test_nvector_manyvector_1000_100_0 PROPERTIES  _BACKTRACE_TRIPLES "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-src/cmake/macros/SundialsAddTest.cmake;161;add_test;/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-src/examples/nvector/manyvector/CMakeLists.txt;80;sundials_add_test;/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-src/examples/nvector/manyvector/CMakeLists.txt;0;")
+add_test(test_nvector_manyvector_100_1000_0 "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-build/examples/nvector/manyvector/test_nvector_manyvector" "100" "1000" "0")
+set_tests_properties(test_nvector_manyvector_100_1000_0 PROPERTIES  _BACKTRACE_TRIPLES "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-src/cmake/macros/SundialsAddTest.cmake;161;add_test;/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-src/examples/nvector/manyvector/CMakeLists.txt;80;sundials_add_test;/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-src/examples/nvector/manyvector/CMakeLists.txt;0;")
+add_test(test_fnvector_manyvector_mod "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-build/examples/nvector/manyvector/test_fnvector_manyvector_mod" "100" "1000" "0")
+set_tests_properties(test_fnvector_manyvector_mod PROPERTIES  _BACKTRACE_TRIPLES "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-src/cmake/macros/SundialsAddTest.cmake;161;add_test;/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-src/examples/nvector/manyvector/CMakeLists.txt;128;sundials_add_test;/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-src/examples/nvector/manyvector/CMakeLists.txt;0;")

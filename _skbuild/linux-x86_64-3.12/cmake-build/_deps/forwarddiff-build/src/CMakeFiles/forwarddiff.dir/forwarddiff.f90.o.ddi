@@ -1,0 +1,31 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/forwarddiff-build/src/CMakeFiles/forwarddiff.dir/forwarddiff.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/forwarddiff.mod",
+					"is-interface" : true,
+					"logical-name" : "forwarddiff.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "forwarddiff_const.mod"
+				},
+				{
+					"logical-name" : "forwarddiff_derivative.mod"
+				},
+				{
+					"logical-name" : "forwarddiff_dual.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

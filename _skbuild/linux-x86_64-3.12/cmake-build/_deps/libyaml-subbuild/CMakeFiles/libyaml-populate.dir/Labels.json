@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/libyaml-subbuild/CMakeFiles/libyaml-populate"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/libyaml-subbuild/CMakeFiles/libyaml-populate.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/libyaml-subbuild/CMakeFiles/libyaml-populate-complete.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/libyaml-subbuild/libyaml-populate-prefix/src/libyaml-populate-stamp/libyaml-populate-build.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/libyaml-subbuild/libyaml-populate-prefix/src/libyaml-populate-stamp/libyaml-populate-configure.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/libyaml-subbuild/libyaml-populate-prefix/src/libyaml-populate-stamp/libyaml-populate-download.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/libyaml-subbuild/libyaml-populate-prefix/src/libyaml-populate-stamp/libyaml-populate-install.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/libyaml-subbuild/libyaml-populate-prefix/src/libyaml-populate-stamp/libyaml-populate-mkdir.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/libyaml-subbuild/libyaml-populate-prefix/src/libyaml-populate-stamp/libyaml-populate-patch.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/libyaml-subbuild/libyaml-populate-prefix/src/libyaml-populate-stamp/libyaml-populate-test.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/libyaml-subbuild/libyaml-populate-prefix/src/libyaml-populate-stamp/libyaml-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libyaml-populate"
+		],
+		"name" : "libyaml-populate"
+	}
+}

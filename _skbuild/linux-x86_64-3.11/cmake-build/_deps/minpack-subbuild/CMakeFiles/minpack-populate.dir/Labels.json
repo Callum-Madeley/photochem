@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/minpack-subbuild/CMakeFiles/minpack-populate"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/minpack-subbuild/CMakeFiles/minpack-populate.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/minpack-subbuild/CMakeFiles/minpack-populate-complete.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/minpack-subbuild/minpack-populate-prefix/src/minpack-populate-stamp/minpack-populate-build.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/minpack-subbuild/minpack-populate-prefix/src/minpack-populate-stamp/minpack-populate-configure.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/minpack-subbuild/minpack-populate-prefix/src/minpack-populate-stamp/minpack-populate-download.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/minpack-subbuild/minpack-populate-prefix/src/minpack-populate-stamp/minpack-populate-install.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/minpack-subbuild/minpack-populate-prefix/src/minpack-populate-stamp/minpack-populate-mkdir.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/minpack-subbuild/minpack-populate-prefix/src/minpack-populate-stamp/minpack-populate-patch.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/minpack-subbuild/minpack-populate-prefix/src/minpack-populate-stamp/minpack-populate-test.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/minpack-subbuild/minpack-populate-prefix/src/minpack-populate-stamp/minpack-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"minpack-populate"
+		],
+		"name" : "minpack-populate"
+	}
+}

@@ -1,0 +1,4 @@
+ninja_dyndep_version = 1.0
+build _deps/cvode-build/src/cvode/fmod/CMakeFiles/sundials_fcvode_mod_obj_static.dir/fcvode_mod.f90.o | fortran_STATIC/fcvode_mod.mod: dyndep | fortran_STATIC/fsundials_linearsolver_mod.mod fortran_STATIC/fsundials_matrix_mod.mod fortran_STATIC/fsundials_nonlinearsolver_mod.mod fortran_STATIC/fsundials_nvector_mod.mod fortran_STATIC/fsundials_types_mod.mod
+  restat = 1
+

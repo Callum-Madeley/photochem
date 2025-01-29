@@ -1,0 +1,4 @@
+ninja_dyndep_version = 1.0
+build _deps/cvode-build/src/sunlinsol/spfgmr/fmod/CMakeFiles/sundials_fsunlinsolspfgmr_mod_obj_static.dir/fsunlinsol_spfgmr_mod.f90.o | fortran_STATIC/fsunlinsol_spfgmr_mod.mod: dyndep | fortran_STATIC/fsundials_linearsolver_mod.mod fortran_STATIC/fsundials_matrix_mod.mod fortran_STATIC/fsundials_nvector_mod.mod fortran_STATIC/fsundials_types_mod.mod
+  restat = 1
+

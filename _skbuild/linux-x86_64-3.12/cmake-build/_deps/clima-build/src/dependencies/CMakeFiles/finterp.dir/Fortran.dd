@@ -1,0 +1,4 @@
+ninja_dyndep_version = 1.0
+build _deps/clima-build/src/dependencies/CMakeFiles/finterp.dir/linear_interpolation_module.F90.o | modules/linear_interpolation_module.mod: dyndep | modules/forwarddiff.mod
+  restat = 1
+

@@ -1,0 +1,117 @@
+{
+	"modules" : 
+	{
+		"clima.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima.mod",
+			"is-private" : false
+		},
+		"clima_adiabat.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_adiabat.mod",
+			"is-private" : false
+		},
+		"clima_adiabat@clima_adiabat_solve.smod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_adiabat@clima_adiabat_solve.smod",
+			"is-private" : false
+		},
+		"clima_adiabat_dry.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_adiabat_dry.mod",
+			"is-private" : false
+		},
+		"clima_adiabat_general.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_adiabat_general.mod",
+			"is-private" : false
+		},
+		"clima_adiabat_rc.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_adiabat_rc.mod",
+			"is-private" : false
+		},
+		"clima_climate.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_climate.mod",
+			"is-private" : false
+		},
+		"clima_climate@clima_climate_integrate.smod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_climate@clima_climate_integrate.smod",
+			"is-private" : false
+		},
+		"clima_climate@clima_climate_rhs.smod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_climate@clima_climate_rhs.smod",
+			"is-private" : false
+		},
+		"clima_const.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_const.mod",
+			"is-private" : false
+		},
+		"clima_eqns.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_eqns.mod",
+			"is-private" : false
+		},
+		"clima_eqns_water.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_eqns_water.mod",
+			"is-private" : false
+		},
+		"clima_radtran.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_radtran.mod",
+			"is-private" : false
+		},
+		"clima_radtran_radiate.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_radtran_radiate.mod",
+			"is-private" : false
+		},
+		"clima_radtran_twostream.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_radtran_twostream.mod",
+			"is-private" : false
+		},
+		"clima_radtran_types.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_radtran_types.mod",
+			"is-private" : false
+		},
+		"clima_radtran_types@clima_radtran_types_create.smod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_radtran_types@clima_radtran_types_create.smod",
+			"is-private" : false
+		},
+		"clima_saturationdata.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_saturationdata.mod",
+			"is-private" : false
+		},
+		"clima_types.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_types.mod",
+			"is-private" : false
+		},
+		"clima_types@clima_types_create.smod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_types@clima_types_create.smod",
+			"is-private" : false
+		},
+		"clima_useful.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_useful.mod",
+			"is-private" : false
+		},
+		"clima_version.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/clima_version.mod",
+			"is-private" : false
+		}
+	},
+	"references" : {},
+	"usages" : {}
+}

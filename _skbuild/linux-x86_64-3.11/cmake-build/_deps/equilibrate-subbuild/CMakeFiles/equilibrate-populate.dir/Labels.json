@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-subbuild/CMakeFiles/equilibrate-populate"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-subbuild/CMakeFiles/equilibrate-populate.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-subbuild/CMakeFiles/equilibrate-populate-complete.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-subbuild/equilibrate-populate-prefix/src/equilibrate-populate-stamp/equilibrate-populate-build.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-subbuild/equilibrate-populate-prefix/src/equilibrate-populate-stamp/equilibrate-populate-configure.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-subbuild/equilibrate-populate-prefix/src/equilibrate-populate-stamp/equilibrate-populate-download.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-subbuild/equilibrate-populate-prefix/src/equilibrate-populate-stamp/equilibrate-populate-install.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-subbuild/equilibrate-populate-prefix/src/equilibrate-populate-stamp/equilibrate-populate-mkdir.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-subbuild/equilibrate-populate-prefix/src/equilibrate-populate-stamp/equilibrate-populate-patch.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-subbuild/equilibrate-populate-prefix/src/equilibrate-populate-stamp/equilibrate-populate-test.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/equilibrate-subbuild/equilibrate-populate-prefix/src/equilibrate-populate-stamp/equilibrate-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"equilibrate-populate"
+		],
+		"name" : "equilibrate-populate"
+	}
+}

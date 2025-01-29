@@ -1,0 +1,36 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Release",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/futils-build/tests",
+	"dir-cur-src" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/futils-src/tests",
+	"dir-top-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build",
+	"dir-top-src" : "/data/cjm267/photochem",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"modules"
+	],
+	"language" : "Fortran",
+	"linked-target-dirs" : 
+	[
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/futils-build/src/CMakeFiles/futils.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/futils-build/src/CMakeFiles/specfun.dir"
+	],
+	"module-dir" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/modules",
+	"sources" : 
+	{
+		"_deps/futils-build/tests/CMakeFiles/test_futils.dir/test_futils.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/futils-src/tests/test_futils.f90"
+		}
+	},
+	"submodule-ext" : ".smod",
+	"submodule-sep" : "@"
+}

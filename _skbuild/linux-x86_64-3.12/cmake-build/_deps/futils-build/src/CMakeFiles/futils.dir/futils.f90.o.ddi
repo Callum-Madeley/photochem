@@ -1,0 +1,40 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/futils-build/src/CMakeFiles/futils.dir/futils.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/futils.mod",
+					"is-interface" : true,
+					"logical-name" : "futils.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "futils_brent.mod"
+				},
+				{
+					"logical-name" : "futils_misc.mod"
+				},
+				{
+					"logical-name" : "futils_mrgrnk.mod"
+				},
+				{
+					"logical-name" : "futils_rebin.mod"
+				},
+				{
+					"logical-name" : "futils_special.mod"
+				},
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

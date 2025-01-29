@@ -1,0 +1,37 @@
+{
+	"modules" : 
+	{
+		"futils.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/futils.mod",
+			"is-private" : false
+		},
+		"futils_brent.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/futils_brent.mod",
+			"is-private" : false
+		},
+		"futils_misc.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/futils_misc.mod",
+			"is-private" : false
+		},
+		"futils_mrgrnk.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/futils_mrgrnk.mod",
+			"is-private" : false
+		},
+		"futils_rebin.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/futils_rebin.mod",
+			"is-private" : false
+		},
+		"futils_special.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/futils_special.mod",
+			"is-private" : false
+		}
+	},
+	"references" : {},
+	"usages" : {}
+}

@@ -1,0 +1,32 @@
+{
+	"modules" : 
+	{
+		"equilibrate.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/modules/equilibrate.mod",
+			"is-private" : false
+		},
+		"equilibrate_cea.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/modules/equilibrate_cea.mod",
+			"is-private" : false
+		},
+		"equilibrate_const.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/modules/equilibrate_const.mod",
+			"is-private" : false
+		},
+		"equilibrate_version.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/modules/equilibrate_version.mod",
+			"is-private" : false
+		},
+		"equilibrate_yaml.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/modules/equilibrate_yaml.mod",
+			"is-private" : false
+		}
+	},
+	"references" : {},
+	"usages" : {}
+}

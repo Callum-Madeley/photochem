@@ -1,0 +1,31 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/cvode-build/src/sunnonlinsol/newton/fmod/CMakeFiles/sundials_fsunnonlinsolnewton_mod_obj_static.dir/fsunnonlinsol_newton_mod.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "fortran_STATIC/fsunnonlinsol_newton_mod.mod",
+					"is-interface" : true,
+					"logical-name" : "fsunnonlinsol_newton_mod.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "fsundials_nonlinearsolver_mod.mod"
+				},
+				{
+					"logical-name" : "fsundials_nvector_mod.mod"
+				},
+				{
+					"logical-name" : "fsundials_types_mod.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

@@ -1,0 +1,32 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Release",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/clima-build/src/dependencies",
+	"dir-cur-src" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/clima-src/src/dependencies",
+	"dir-top-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build",
+	"dir-top-src" : "/data/cjm267/photochem",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "Fortran",
+	"linked-target-dirs" : 
+	[
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/forwarddiff-build/src/CMakeFiles/forwarddiff.dir"
+	],
+	"module-dir" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/modules",
+	"sources" : 
+	{
+		"_deps/clima-build/src/dependencies/CMakeFiles/finterp.dir/linear_interpolation_module.F90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/clima-build/src/dependencies/linear_interpolation_module.F90"
+		}
+	},
+	"submodule-ext" : ".smod",
+	"submodule-sep" : "@"
+}

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/forwarddiff-subbuild/CMakeFiles/forwarddiff-populate"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/forwarddiff-subbuild/CMakeFiles/forwarddiff-populate.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/forwarddiff-subbuild/CMakeFiles/forwarddiff-populate-complete.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/forwarddiff-subbuild/forwarddiff-populate-prefix/src/forwarddiff-populate-stamp/forwarddiff-populate-build.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/forwarddiff-subbuild/forwarddiff-populate-prefix/src/forwarddiff-populate-stamp/forwarddiff-populate-configure.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/forwarddiff-subbuild/forwarddiff-populate-prefix/src/forwarddiff-populate-stamp/forwarddiff-populate-download.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/forwarddiff-subbuild/forwarddiff-populate-prefix/src/forwarddiff-populate-stamp/forwarddiff-populate-install.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/forwarddiff-subbuild/forwarddiff-populate-prefix/src/forwarddiff-populate-stamp/forwarddiff-populate-mkdir.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/forwarddiff-subbuild/forwarddiff-populate-prefix/src/forwarddiff-populate-stamp/forwarddiff-populate-patch.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/forwarddiff-subbuild/forwarddiff-populate-prefix/src/forwarddiff-populate-stamp/forwarddiff-populate-test.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/forwarddiff-subbuild/forwarddiff-populate-prefix/src/forwarddiff-populate-stamp/forwarddiff-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"forwarddiff-populate"
+		],
+		"name" : "forwarddiff-populate"
+	}
+}

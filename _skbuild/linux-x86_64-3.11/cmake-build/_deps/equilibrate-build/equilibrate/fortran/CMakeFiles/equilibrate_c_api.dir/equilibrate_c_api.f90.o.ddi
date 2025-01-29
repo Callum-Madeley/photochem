@@ -1,0 +1,28 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/equilibrate-build/equilibrate/fortran/CMakeFiles/equilibrate_c_api.dir/equilibrate_c_api.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/equilibrate_c_api.mod",
+					"is-interface" : true,
+					"logical-name" : "equilibrate_c_api.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "equilibrate.mod"
+				},
+				{
+					"logical-name" : "iso_c_binding.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

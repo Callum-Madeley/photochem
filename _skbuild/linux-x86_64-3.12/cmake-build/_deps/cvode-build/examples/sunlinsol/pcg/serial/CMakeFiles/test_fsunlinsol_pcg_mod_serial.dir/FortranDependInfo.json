@@ -1,0 +1,51 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Release",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-build/examples/sunlinsol/pcg/serial",
+	"dir-cur-src" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-src/examples/sunlinsol/pcg/serial",
+	"dir-top-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build",
+	"dir-top-src" : "/data/cjm267/photochem",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"_deps/cvode-src/examples/sunlinsol/pcg/serial/.",
+		"_deps/cvode-src/examples/sunlinsol/pcg/serial/../..",
+		"_deps/cvode-src/include",
+		"_deps/cvode-build/include",
+		"_deps/cvode-src/src/sundials",
+		"fortran_STATIC"
+	],
+	"language" : "Fortran",
+	"linked-target-dirs" : 
+	[
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-build/src/nvector/serial/fmod/CMakeFiles/sundials_fnvecserial_mod_static.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-build/src/sunlinsol/pcg/fmod/CMakeFiles/sundials_fsunlinsolpcg_mod_static.dir"
+	],
+	"module-dir" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-build/examples/sunlinsol/pcg/serial",
+	"sources" : 
+	{
+		"_deps/cvode-build/examples/sunlinsol/pcg/serial/CMakeFiles/test_fsunlinsol_pcg_mod_serial.dir/__/__/__/utilities/test_utilities.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-src/examples/utilities/test_utilities.f90"
+		},
+		"_deps/cvode-build/examples/sunlinsol/pcg/serial/CMakeFiles/test_fsunlinsol_pcg_mod_serial.dir/__/__/test_sunlinsol.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-src/examples/sunlinsol/test_sunlinsol.f90"
+		},
+		"_deps/cvode-build/examples/sunlinsol/pcg/serial/CMakeFiles/test_fsunlinsol_pcg_mod_serial.dir/test_fsunlinsol_pcg_mod_serial.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-src/examples/sunlinsol/pcg/serial/test_fsunlinsol_pcg_mod_serial.f90"
+		}
+	},
+	"submodule-ext" : ".smod",
+	"submodule-sep" : "@"
+}

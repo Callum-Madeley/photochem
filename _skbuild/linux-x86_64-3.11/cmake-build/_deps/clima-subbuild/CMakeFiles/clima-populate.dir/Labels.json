@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/clima-subbuild/CMakeFiles/clima-populate"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/clima-subbuild/CMakeFiles/clima-populate.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/clima-subbuild/CMakeFiles/clima-populate-complete.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/clima-subbuild/clima-populate-prefix/src/clima-populate-stamp/clima-populate-build.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/clima-subbuild/clima-populate-prefix/src/clima-populate-stamp/clima-populate-configure.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/clima-subbuild/clima-populate-prefix/src/clima-populate-stamp/clima-populate-download.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/clima-subbuild/clima-populate-prefix/src/clima-populate-stamp/clima-populate-install.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/clima-subbuild/clima-populate-prefix/src/clima-populate-stamp/clima-populate-mkdir.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/clima-subbuild/clima-populate-prefix/src/clima-populate-stamp/clima-populate-patch.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/clima-subbuild/clima-populate-prefix/src/clima-populate-stamp/clima-populate-test.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/clima-subbuild/clima-populate-prefix/src/clima-populate-stamp/clima-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"clima-populate"
+		],
+		"name" : "clima-populate"
+	}
+}

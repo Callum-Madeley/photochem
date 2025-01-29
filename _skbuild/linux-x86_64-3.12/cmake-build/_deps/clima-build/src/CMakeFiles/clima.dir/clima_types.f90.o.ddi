@@ -1,0 +1,28 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/clima-build/src/CMakeFiles/clima.dir/clima_types.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/clima_types.mod",
+					"is-interface" : true,
+					"logical-name" : "clima_types.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "clima_const.mod"
+				},
+				{
+					"logical-name" : "clima_saturationdata.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

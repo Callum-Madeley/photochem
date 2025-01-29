@@ -1,0 +1,12 @@
+{
+	"modules" : 
+	{
+		"fsunnonlinsol_newton_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/fortran_STATIC/fsunnonlinsol_newton_mod.mod",
+			"is-private" : false
+		}
+	},
+	"references" : {},
+	"usages" : {}
+}

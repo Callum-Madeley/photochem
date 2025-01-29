@@ -1,0 +1,4 @@
+ninja_dyndep_version = 1.0
+build _deps/cvode-build/src/sunnonlinsol/newton/fmod/CMakeFiles/sundials_fsunnonlinsolnewton_mod_obj_static.dir/fsunnonlinsol_newton_mod.f90.o | fortran_STATIC/fsunnonlinsol_newton_mod.mod: dyndep | fortran_STATIC/fsundials_nonlinearsolver_mod.mod fortran_STATIC/fsundials_nvector_mod.mod fortran_STATIC/fsundials_types_mod.mod
+  restat = 1
+

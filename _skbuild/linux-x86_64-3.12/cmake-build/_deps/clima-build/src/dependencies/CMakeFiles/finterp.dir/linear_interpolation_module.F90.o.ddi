@@ -1,0 +1,28 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/clima-build/src/dependencies/CMakeFiles/finterp.dir/linear_interpolation_module.F90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/linear_interpolation_module.mod",
+					"is-interface" : true,
+					"logical-name" : "linear_interpolation_module.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "forwarddiff.mod"
+				},
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

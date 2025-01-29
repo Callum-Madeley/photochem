@@ -1,0 +1,38 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Release",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-build/src/sunlinsol/sptfqmr/fmod",
+	"dir-cur-src" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-src/src/sunlinsol/sptfqmr/fmod",
+	"dir-top-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build",
+	"dir-top-src" : "/data/cjm267/photochem",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"_deps/cvode-src/include",
+		"_deps/cvode-build/include",
+		"_deps/cvode-src/src/sundials",
+		"fortran_STATIC"
+	],
+	"language" : "Fortran",
+	"linked-target-dirs" : 
+	[
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-build/src/sundials/fmod/CMakeFiles/sundials_fgeneric_mod_obj_static.dir"
+	],
+	"module-dir" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/fortran_STATIC",
+	"sources" : 
+	{
+		"_deps/cvode-build/src/sunlinsol/sptfqmr/fmod/CMakeFiles/sundials_fsunlinsolsptfqmr_mod_obj_static.dir/fsunlinsol_sptfqmr_mod.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-src/src/sunlinsol/sptfqmr/fmod/fsunlinsol_sptfqmr_mod.f90"
+		}
+	},
+	"submodule-ext" : ".smod",
+	"submodule-sep" : "@"
+}

@@ -1,0 +1,1 @@
+{"args": ["/data/cjm267/.conda/envs/photochem_conda/bin/cmake", "-DBUILD_PYTHON_PHOTOCHEM=ON", "-DBUILD_EXECUTABLES=OFF", "-DBUILD_WITH_OPENMP=ON", "-DCMAKE_BUILD_TYPE:STRING=Release"], "version": "3.31.5", "environment": {"PYTHONNOUSERSITE": null, "PYTHONPATH": null}}

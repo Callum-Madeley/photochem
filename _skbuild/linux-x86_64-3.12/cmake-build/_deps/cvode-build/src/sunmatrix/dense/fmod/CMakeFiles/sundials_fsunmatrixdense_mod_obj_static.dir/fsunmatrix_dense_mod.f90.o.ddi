@@ -1,0 +1,31 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/cvode-build/src/sunmatrix/dense/fmod/CMakeFiles/sundials_fsunmatrixdense_mod_obj_static.dir/fsunmatrix_dense_mod.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "fortran_STATIC/fsunmatrix_dense_mod.mod",
+					"is-interface" : true,
+					"logical-name" : "fsunmatrix_dense_mod.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "fsundials_matrix_mod.mod"
+				},
+				{
+					"logical-name" : "fsundials_nvector_mod.mod"
+				},
+				{
+					"logical-name" : "fsundials_types_mod.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

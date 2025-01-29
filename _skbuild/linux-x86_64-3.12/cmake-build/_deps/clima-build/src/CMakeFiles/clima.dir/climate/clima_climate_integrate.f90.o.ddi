@@ -1,0 +1,28 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/clima-build/src/CMakeFiles/clima.dir/climate/clima_climate_integrate.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/clima_climate@clima_climate_integrate.smod",
+					"is-interface" : true,
+					"logical-name" : "clima_climate@clima_climate_integrate.smod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "clima_climate.mod"
+				},
+				{
+					"logical-name" : "dop853_module.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

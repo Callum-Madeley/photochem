@@ -1,0 +1,10 @@
+ninja_dyndep_version = 1.0
+build _deps/fortran-yaml-c-build/src/CMakeFiles/fortran-yaml-c.dir/fortran_yaml_c_types.f90.o | modules/fortran_yaml_c_types.mod: dyndep
+  restat = 1
+
+build _deps/fortran-yaml-c-build/src/CMakeFiles/fortran-yaml-c.dir/fortran_yaml_c_interface.f90.o | modules/fortran_yaml_c_interface.mod: dyndep | modules/fortran_yaml_c_types.mod
+  restat = 1
+
+build _deps/fortran-yaml-c-build/src/CMakeFiles/fortran-yaml-c.dir/fortran_yaml_c.f90.o | modules/fortran_yaml_c.mod: dyndep | modules/fortran_yaml_c_interface.mod modules/fortran_yaml_c_types.mod
+  restat = 1
+

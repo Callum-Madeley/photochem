@@ -1,0 +1,20 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/futils-build/src/CMakeFiles/futils.dir/futils_mrgrnk.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/futils_mrgrnk.mod",
+					"is-interface" : true,
+					"logical-name" : "futils_mrgrnk.mod"
+				}
+			],
+			"requires" : []
+		}
+	],
+	"version" : 0
+}

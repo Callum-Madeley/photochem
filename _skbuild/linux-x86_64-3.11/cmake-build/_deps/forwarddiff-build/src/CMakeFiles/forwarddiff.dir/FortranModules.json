@@ -1,0 +1,27 @@
+{
+	"modules" : 
+	{
+		"forwarddiff.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/forwarddiff.mod",
+			"is-private" : false
+		},
+		"forwarddiff_const.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/forwarddiff_const.mod",
+			"is-private" : false
+		},
+		"forwarddiff_derivative.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/forwarddiff_derivative.mod",
+			"is-private" : false
+		},
+		"forwarddiff_dual.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules/forwarddiff_dual.mod",
+			"is-private" : false
+		}
+	},
+	"references" : {},
+	"usages" : {}
+}

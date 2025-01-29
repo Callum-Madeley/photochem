@@ -1,0 +1,25 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/clima-build/src/CMakeFiles/clima.dir/clima_const.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/clima_const.mod",
+					"is-interface" : true,
+					"logical-name" : "clima_const.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

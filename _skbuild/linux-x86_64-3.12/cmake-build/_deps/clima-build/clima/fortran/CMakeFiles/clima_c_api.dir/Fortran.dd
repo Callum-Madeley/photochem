@@ -1,0 +1,4 @@
+ninja_dyndep_version = 1.0
+build _deps/clima-build/clima/fortran/CMakeFiles/clima_c_api.dir/clima_c_api.f90.o | modules/clima_c_api.mod: dyndep | modules/clima.mod modules/clima_radtran.mod modules/clima_radtran_types.mod modules/futils.mod
+  restat = 1
+

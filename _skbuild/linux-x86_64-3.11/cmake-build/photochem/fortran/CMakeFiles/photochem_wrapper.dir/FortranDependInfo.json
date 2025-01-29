@@ -1,0 +1,53 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Release",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/photochem/fortran",
+	"dir-cur-src" : "/data/cjm267/photochem/photochem/fortran",
+	"dir-top-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build",
+	"dir-top-src" : "/data/cjm267/photochem",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"modules",
+		"_deps/libyaml-src/include",
+		"_deps/libyaml-build/include",
+		"_deps/cvode-src/include",
+		"_deps/cvode-build/include",
+		"_deps/cvode-src/src/sundials",
+		"fortran_STATIC",
+		"_deps/h5fortran-build/include",
+		"/opt/ioa/software/anaconda3/envs/python-3.11-2023-08a/include"
+	],
+	"language" : "Fortran",
+	"linked-target-dirs" : 
+	[
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/src/CMakeFiles/photochem.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-build/src/cvode/fmod/CMakeFiles/sundials_fcvode_mod_static.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/clima-build/src/CMakeFiles/clima.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/fortran-yaml-c-build/src/CMakeFiles/fortran-yaml-c.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-build/src/CMakeFiles/futils.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-build/src/CMakeFiles/specfun.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/h5fortran-build/CMakeFiles/h5fortran.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/clima-build/src/dependencies/CMakeFiles/dop853.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/clima-build/src/dependencies/CMakeFiles/finterp.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/clima-build/src/dependencies/CMakeFiles/minpack.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/forwarddiff-build/src/CMakeFiles/forwarddiff.dir"
+	],
+	"module-dir" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules",
+	"sources" : 
+	{
+		"photochem/fortran/CMakeFiles/photochem_wrapper.dir/photochem_c_api.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/photochem/fortran/photochem_c_api.f90"
+		}
+	},
+	"submodule-ext" : ".smod",
+	"submodule-sep" : "@"
+}

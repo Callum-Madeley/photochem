@@ -1,0 +1,67 @@
+ninja_dyndep_version = 1.0
+build _deps/clima-build/src/CMakeFiles/clima.dir/clima_version.f90.o | modules/clima_version.mod: dyndep
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/clima_const.f90.o | modules/clima_const.mod: dyndep
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/clima_useful.f90.o | modules/clima_useful.mod: dyndep | modules/clima_const.mod _deps/h5fortran-build/include/h5fortran.mod modules/minpack_module.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/clima_eqns.f90.o | modules/clima_eqns.mod: dyndep | modules/clima_const.mod modules/clima_types.mod modules/futils.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/clima_eqns_water.f90.o | modules/clima_eqns_water.mod: dyndep | modules/clima_const.mod modules/futils.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/clima_types.f90.o | modules/clima_types.mod: dyndep | modules/clima_const.mod modules/clima_saturationdata.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/clima_types_create.f90.o | modules/clima_types@clima_types_create.smod: dyndep | modules/clima_types.mod modules/fortran_yaml_c.mod modules/fortran_yaml_c_types.mod modules/futils.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/radtran/clima_radtran_types.f90.o | modules/clima_radtran_types.mod: dyndep | modules/clima_const.mod modules/clima_types.mod modules/linear_interpolation_module.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/radtran/clima_radtran_types_create.f90.o | modules/clima_radtran_types@clima_radtran_types_create.smod: dyndep | modules/clima_const.mod modules/clima_eqns.mod modules/clima_radtran_types.mod modules/clima_types.mod modules/clima_useful.mod modules/fortran_yaml_c.mod modules/fortran_yaml_c_types.mod modules/futils.mod _deps/h5fortran-build/include/h5fortran.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/radtran/clima_radtran_twostream.f90.o | modules/clima_radtran_twostream.mod: dyndep | modules/clima_const.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/radtran/clima_radtran_radiate.f90.o | modules/clima_radtran_radiate.mod: dyndep | modules/clima_const.mod modules/clima_eqns.mod modules/clima_radtran_twostream.mod modules/clima_radtran_types.mod modules/futils.mod modules/futils_mrgrnk.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/radtran/clima_radtran.f90.o | modules/clima_radtran.mod: dyndep | modules/clima_const.mod modules/clima_eqns.mod modules/clima_radtran_radiate.mod modules/clima_radtran_types.mod modules/clima_types.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/climate/clima_climate.f90.o | modules/clima_climate.mod: dyndep | modules/clima_const.mod modules/clima_eqns.mod modules/clima_radtran.mod modules/clima_types.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/climate/clima_climate_rhs.f90.o | modules/clima_climate@clima_climate_rhs.smod: dyndep | modules/clima_climate.mod modules/clima_const.mod modules/clima_eqns.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/climate/clima_climate_integrate.f90.o | modules/clima_climate@clima_climate_integrate.smod: dyndep | modules/clima_climate.mod modules/dop853_module.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/adiabat/clima_adiabat_general.f90.o | modules/clima_adiabat_general.mod: dyndep | modules/clima_const.mod modules/clima_eqns.mod modules/clima_eqns_water.mod modules/clima_types.mod modules/clima_useful.mod modules/dop853_module.mod modules/futils.mod modules/minpack_module.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/adiabat/clima_adiabat_rc.f90.o | modules/clima_adiabat_rc.mod: dyndep | modules/clima_adiabat_general.mod modules/clima_const.mod modules/clima_eqns.mod modules/clima_eqns_water.mod modules/clima_types.mod modules/dop853_module.mod modules/futils.mod modules/linear_interpolation_module.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/adiabat/clima_adiabat_solve.f90.o | modules/clima_adiabat@clima_adiabat_solve.smod: dyndep | modules/clima_adiabat.mod modules/clima_adiabat_rc.mod modules/clima_const.mod modules/clima_eqns.mod modules/clima_useful.mod modules/minpack_module.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/adiabat/clima_adiabat_dry.f90.o | modules/clima_adiabat_dry.mod: dyndep | modules/clima_adiabat_general.mod modules/clima_const.mod modules/clima_eqns.mod modules/clima_eqns_water.mod modules/clima_types.mod modules/dop853_module.mod modules/futils.mod modules/linear_interpolation_module.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/adiabat/clima_adiabat.f90.o | modules/clima_adiabat.mod: dyndep | modules/clima_adiabat_dry.mod modules/clima_adiabat_general.mod modules/clima_const.mod modules/clima_eqns.mod modules/clima_radtran.mod modules/clima_types.mod modules/clima_useful.mod modules/futils.mod modules/minpack_module.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/clima_saturationdata.f90.o | modules/clima_saturationdata.mod: dyndep | modules/clima_const.mod modules/fortran_yaml_c_types.mod modules/forwarddiff.mod
+  restat = 1
+
+build _deps/clima-build/src/CMakeFiles/clima.dir/clima.f90.o | modules/clima.mod: dyndep | modules/clima_adiabat.mod modules/clima_climate.mod modules/clima_const.mod modules/clima_eqns.mod modules/clima_radtran.mod modules/clima_version.mod
+  restat = 1
+

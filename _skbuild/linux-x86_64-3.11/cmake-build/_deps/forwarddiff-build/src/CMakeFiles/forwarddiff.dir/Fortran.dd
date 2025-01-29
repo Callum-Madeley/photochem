@@ -1,0 +1,13 @@
+ninja_dyndep_version = 1.0
+build _deps/forwarddiff-build/src/CMakeFiles/forwarddiff.dir/forwarddiff_const.f90.o | modules/forwarddiff_const.mod: dyndep
+  restat = 1
+
+build _deps/forwarddiff-build/src/CMakeFiles/forwarddiff.dir/forwarddiff_dual.f90.o | modules/forwarddiff_dual.mod: dyndep | modules/forwarddiff_const.mod
+  restat = 1
+
+build _deps/forwarddiff-build/src/CMakeFiles/forwarddiff.dir/forwarddiff_derivative.f90.o | modules/forwarddiff_derivative.mod: dyndep | modules/forwarddiff_const.mod modules/forwarddiff_dual.mod
+  restat = 1
+
+build _deps/forwarddiff-build/src/CMakeFiles/forwarddiff.dir/forwarddiff.f90.o | modules/forwarddiff.mod: dyndep | modules/forwarddiff_const.mod modules/forwarddiff_derivative.mod modules/forwarddiff_dual.mod
+  restat = 1
+

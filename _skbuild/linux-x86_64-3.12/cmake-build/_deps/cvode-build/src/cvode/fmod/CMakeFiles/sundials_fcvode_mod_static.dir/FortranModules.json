@@ -1,0 +1,107 @@
+{
+	"modules" : 
+	{
+		"fcvode_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fcvode_mod.mod",
+			"is-private" : false
+		},
+		"fnvector_serial_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fnvector_serial_mod.mod",
+			"is-private" : false
+		},
+		"fsundials_futils_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsundials_futils_mod.mod",
+			"is-private" : false
+		},
+		"fsundials_linearsolver_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsundials_linearsolver_mod.mod",
+			"is-private" : false
+		},
+		"fsundials_matrix_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsundials_matrix_mod.mod",
+			"is-private" : false
+		},
+		"fsundials_nonlinearsolver_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsundials_nonlinearsolver_mod.mod",
+			"is-private" : false
+		},
+		"fsundials_nvector_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsundials_nvector_mod.mod",
+			"is-private" : false
+		},
+		"fsundials_types_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsundials_types_mod.mod",
+			"is-private" : false
+		},
+		"fsunlinsol_band_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsunlinsol_band_mod.mod",
+			"is-private" : false
+		},
+		"fsunlinsol_dense_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsunlinsol_dense_mod.mod",
+			"is-private" : false
+		},
+		"fsunlinsol_pcg_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsunlinsol_pcg_mod.mod",
+			"is-private" : false
+		},
+		"fsunlinsol_spbcgs_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsunlinsol_spbcgs_mod.mod",
+			"is-private" : false
+		},
+		"fsunlinsol_spfgmr_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsunlinsol_spfgmr_mod.mod",
+			"is-private" : false
+		},
+		"fsunlinsol_spgmr_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsunlinsol_spgmr_mod.mod",
+			"is-private" : false
+		},
+		"fsunlinsol_sptfqmr_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsunlinsol_sptfqmr_mod.mod",
+			"is-private" : false
+		},
+		"fsunmatrix_band_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsunmatrix_band_mod.mod",
+			"is-private" : false
+		},
+		"fsunmatrix_dense_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsunmatrix_dense_mod.mod",
+			"is-private" : false
+		},
+		"fsunmatrix_sparse_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsunmatrix_sparse_mod.mod",
+			"is-private" : false
+		},
+		"fsunnonlinsol_fixedpoint_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsunnonlinsol_fixedpoint_mod.mod",
+			"is-private" : false
+		},
+		"fsunnonlinsol_newton_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsunnonlinsol_newton_mod.mod",
+			"is-private" : false
+		}
+	},
+	"references" : {},
+	"usages" : {}
+}

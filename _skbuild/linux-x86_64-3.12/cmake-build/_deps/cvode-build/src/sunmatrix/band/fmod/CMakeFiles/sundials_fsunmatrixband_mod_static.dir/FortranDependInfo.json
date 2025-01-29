@@ -1,0 +1,53 @@
+{
+	"bmi-installation" : 
+	{
+		"destination" : "lib64",
+		"message-level" : "",
+		"permissions" : "",
+		"script-location" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-build/src/sunmatrix/band/fmod/CMakeFiles/sundials_fsunmatrixband_mod_static.dir/install-cxx-module-bmi-Release.cmake"
+	},
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Release",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-build/src/sunmatrix/band/fmod",
+	"dir-cur-src" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-src/src/sunmatrix/band/fmod",
+	"dir-top-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build",
+	"dir-top-src" : "/data/cjm267/photochem",
+	"exports" : 
+	[
+		{
+			"cxx-module-info-dir" : "",
+			"destination" : "lib64/cmake/sundials",
+			"export-name" : "fsunmatrixband_mod_static",
+			"export-prefix" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-build/CMakeFiles/Export/ec94dd8f19dfc7cfd82c2f26d8b82d7e",
+			"filesystem-export-name" : "fsunmatrixband__mod__static",
+			"install" : true,
+			"namespace" : "SUNDIALS::"
+		}
+	],
+	"forward-modules-from-target-dirs" : 
+	[
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-build/src/sundials/fmod/CMakeFiles/sundials_fgeneric_mod_obj_static.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-build/src/sunmatrix/band/fmod/CMakeFiles/sundials_fsunmatrixband_mod_obj_static.dir"
+	],
+	"include-dirs" : 
+	[
+		"_deps/cvode-src/include",
+		"_deps/cvode-build/include",
+		"_deps/cvode-src/src/sundials",
+		"fortran_STATIC"
+	],
+	"language" : "Fortran",
+	"linked-target-dirs" : 
+	[
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-build/src/sunmatrix/band/fmod/CMakeFiles/sundials_fsunmatrixband_mod_obj_static.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-build/src/sundials/fmod/CMakeFiles/sundials_fgeneric_mod_obj_static.dir"
+	],
+	"module-dir" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC",
+	"sources" : {},
+	"submodule-ext" : ".smod",
+	"submodule-sep" : "@"
+}

@@ -1,0 +1,17 @@
+{
+	"modules" : 
+	{
+		"dop853_constants.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/modules/dop853_constants.mod",
+			"is-private" : false
+		},
+		"dop853_module.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/modules/dop853_module.mod",
+			"is-private" : false
+		}
+	},
+	"references" : {},
+	"usages" : {}
+}

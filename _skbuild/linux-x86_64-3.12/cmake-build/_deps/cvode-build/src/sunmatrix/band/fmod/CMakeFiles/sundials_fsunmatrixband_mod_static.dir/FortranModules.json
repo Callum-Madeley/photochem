@@ -1,0 +1,42 @@
+{
+	"modules" : 
+	{
+		"fsundials_futils_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsundials_futils_mod.mod",
+			"is-private" : false
+		},
+		"fsundials_linearsolver_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsundials_linearsolver_mod.mod",
+			"is-private" : false
+		},
+		"fsundials_matrix_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsundials_matrix_mod.mod",
+			"is-private" : false
+		},
+		"fsundials_nonlinearsolver_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsundials_nonlinearsolver_mod.mod",
+			"is-private" : false
+		},
+		"fsundials_nvector_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsundials_nvector_mod.mod",
+			"is-private" : false
+		},
+		"fsundials_types_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsundials_types_mod.mod",
+			"is-private" : false
+		},
+		"fsunmatrix_band_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsunmatrix_band_mod.mod",
+			"is-private" : false
+		}
+	},
+	"references" : {},
+	"usages" : {}
+}

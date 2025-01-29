@@ -1,0 +1,53 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Release",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-build/examples/sunmatrix/sparse",
+	"dir-cur-src" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-src/examples/sunmatrix/sparse",
+	"dir-top-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build",
+	"dir-top-src" : "/data/cjm267/photochem",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"_deps/cvode-src/examples/sunmatrix/sparse/.",
+		"_deps/cvode-src/examples/sunmatrix/sparse/..",
+		"_deps/cvode-src/include",
+		"_deps/cvode-build/include",
+		"_deps/cvode-src/src/sundials",
+		"fortran_STATIC"
+	],
+	"language" : "Fortran",
+	"linked-target-dirs" : 
+	[
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-build/src/nvector/serial/fmod/CMakeFiles/sundials_fnvecserial_mod_static.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-build/src/sunmatrix/dense/fmod/CMakeFiles/sundials_fsunmatrixdense_mod_static.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-build/src/sunmatrix/band/fmod/CMakeFiles/sundials_fsunmatrixband_mod_static.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-build/src/sunmatrix/sparse/fmod/CMakeFiles/sundials_fsunmatrixsparse_mod_static.dir"
+	],
+	"module-dir" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-build/examples/sunmatrix/sparse",
+	"sources" : 
+	{
+		"_deps/cvode-build/examples/sunmatrix/sparse/CMakeFiles/test_fsunmatrix_sparse_mod.dir/__/__/utilities/test_utilities.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-src/examples/utilities/test_utilities.f90"
+		},
+		"_deps/cvode-build/examples/sunmatrix/sparse/CMakeFiles/test_fsunmatrix_sparse_mod.dir/__/test_sunmatrix.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-src/examples/sunmatrix/test_sunmatrix.f90"
+		},
+		"_deps/cvode-build/examples/sunmatrix/sparse/CMakeFiles/test_fsunmatrix_sparse_mod.dir/test_fsunmatrix_sparse_mod.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-src/examples/sunmatrix/sparse/test_fsunmatrix_sparse_mod.f90"
+		}
+	},
+	"submodule-ext" : ".smod",
+	"submodule-sep" : "@"
+}

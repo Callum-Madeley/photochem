@@ -1,0 +1,20 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/equilibrate-build/src/CMakeFiles/equilibrate.dir/equilibrate_version.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/equilibrate_version.mod",
+					"is-interface" : true,
+					"logical-name" : "equilibrate_version.mod"
+				}
+			],
+			"requires" : []
+		}
+	],
+	"version" : 0
+}

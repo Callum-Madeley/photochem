@@ -1,0 +1,28 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/futils-build/src/CMakeFiles/futils.dir/futils_rebin.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/futils_rebin.mod",
+					"is-interface" : true,
+					"logical-name" : "futils_rebin.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "futils_misc.mod"
+				},
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

@@ -1,0 +1,57 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Release",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-build/src",
+	"dir-cur-src" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-src/src",
+	"dir-top-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build",
+	"dir-top-src" : "/data/cjm267/photochem",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "Fortran",
+	"linked-target-dirs" : 
+	[
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-build/src/CMakeFiles/specfun.dir"
+	],
+	"module-dir" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/modules",
+	"sources" : 
+	{
+		"_deps/futils-build/src/CMakeFiles/futils.dir/futils.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-src/src/futils.f90"
+		},
+		"_deps/futils-build/src/CMakeFiles/futils.dir/futils_brent.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-src/src/futils_brent.f90"
+		},
+		"_deps/futils-build/src/CMakeFiles/futils.dir/futils_misc.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-src/src/futils_misc.f90"
+		},
+		"_deps/futils-build/src/CMakeFiles/futils.dir/futils_mrgrnk.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-src/src/futils_mrgrnk.f90"
+		},
+		"_deps/futils-build/src/CMakeFiles/futils.dir/futils_rebin.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-src/src/futils_rebin.f90"
+		},
+		"_deps/futils-build/src/CMakeFiles/futils.dir/futils_special.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-src/src/futils_special.f90"
+		}
+	},
+	"submodule-ext" : ".smod",
+	"submodule-sep" : "@"
+}

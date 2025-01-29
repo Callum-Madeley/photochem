@@ -1,0 +1,20 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/cvode-build/src/sundials/fmod/CMakeFiles/sundials_fgeneric_mod_obj_static.dir/fsundials_types_mod.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "fortran_STATIC/fsundials_types_mod.mod",
+					"is-interface" : true,
+					"logical-name" : "fsundials_types_mod.mod"
+				}
+			],
+			"requires" : []
+		}
+	],
+	"version" : 0
+}

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-subbuild/CMakeFiles/futils-populate"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-subbuild/CMakeFiles/futils-populate.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-subbuild/CMakeFiles/futils-populate-complete.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-subbuild/futils-populate-prefix/src/futils-populate-stamp/futils-populate-build.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-subbuild/futils-populate-prefix/src/futils-populate-stamp/futils-populate-configure.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-subbuild/futils-populate-prefix/src/futils-populate-stamp/futils-populate-download.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-subbuild/futils-populate-prefix/src/futils-populate-stamp/futils-populate-install.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-subbuild/futils-populate-prefix/src/futils-populate-stamp/futils-populate-mkdir.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-subbuild/futils-populate-prefix/src/futils-populate-stamp/futils-populate-patch.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-subbuild/futils-populate-prefix/src/futils-populate-stamp/futils-populate-test.rule"
+		},
+		{
+			"file" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/futils-subbuild/futils-populate-prefix/src/futils-populate-stamp/futils-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"futils-populate"
+		],
+		"name" : "futils-populate"
+	}
+}

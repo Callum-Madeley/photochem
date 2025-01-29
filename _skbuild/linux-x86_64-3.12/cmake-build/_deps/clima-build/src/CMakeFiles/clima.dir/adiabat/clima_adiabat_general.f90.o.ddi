@@ -1,0 +1,52 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/clima-build/src/CMakeFiles/clima.dir/adiabat/clima_adiabat_general.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/clima_adiabat_general.mod",
+					"is-interface" : true,
+					"logical-name" : "clima_adiabat_general.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "clima_const.mod"
+				},
+				{
+					"logical-name" : "clima_eqns.mod"
+				},
+				{
+					"logical-name" : "clima_eqns_water.mod"
+				},
+				{
+					"logical-name" : "clima_types.mod"
+				},
+				{
+					"logical-name" : "clima_useful.mod"
+				},
+				{
+					"logical-name" : "dop853_module.mod"
+				},
+				{
+					"logical-name" : "futils.mod"
+				},
+				{
+					"logical-name" : "ieee_arithmetic.mod"
+				},
+				{
+					"logical-name" : "iso_c_binding.mod"
+				},
+				{
+					"logical-name" : "minpack_module.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

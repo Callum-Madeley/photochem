@@ -1,0 +1,45 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Release",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-build/examples/sunnonlinsol/fixedpoint",
+	"dir-cur-src" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-src/examples/sunnonlinsol/fixedpoint",
+	"dir-top-bld" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build",
+	"dir-top-src" : "/data/cjm267/photochem",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"_deps/cvode-src/examples/sunnonlinsol/fixedpoint/.",
+		"_deps/cvode-src/include",
+		"_deps/cvode-build/include",
+		"_deps/cvode-src/src/sundials",
+		"fortran_STATIC"
+	],
+	"language" : "Fortran",
+	"linked-target-dirs" : 
+	[
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-build/src/nvector/serial/fmod/CMakeFiles/sundials_fnvecserial_mod_static.dir",
+		"/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-build/src/sunnonlinsol/fixedpoint/fmod/CMakeFiles/sundials_fsunnonlinsolfixedpoint_mod_static.dir"
+	],
+	"module-dir" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/fortran",
+	"sources" : 
+	{
+		"_deps/cvode-build/examples/sunnonlinsol/fixedpoint/CMakeFiles/test_fsunnonlinsol_fixedpoint_mod.dir/__/__/utilities/test_utilities.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-src/examples/utilities/test_utilities.f90"
+		},
+		"_deps/cvode-build/examples/sunnonlinsol/fixedpoint/CMakeFiles/test_fsunnonlinsol_fixedpoint_mod.dir/test_fsunnonlinsol_fixedpoint_mod.f90.o" : 
+		{
+			"language" : "Fortran",
+			"source" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/_deps/cvode-src/examples/sunnonlinsol/fixedpoint/test_fsunnonlinsol_fixedpoint_mod.f90"
+		}
+	},
+	"submodule-ext" : ".smod",
+	"submodule-sep" : "@"
+}

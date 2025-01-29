@@ -1,0 +1,40 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/clima-build/src/CMakeFiles/clima.dir/adiabat/clima_adiabat_solve.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/clima_adiabat@clima_adiabat_solve.smod",
+					"is-interface" : true,
+					"logical-name" : "clima_adiabat@clima_adiabat_solve.smod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "clima_adiabat.mod"
+				},
+				{
+					"logical-name" : "clima_adiabat_rc.mod"
+				},
+				{
+					"logical-name" : "clima_const.mod"
+				},
+				{
+					"logical-name" : "clima_eqns.mod"
+				},
+				{
+					"logical-name" : "clima_useful.mod"
+				},
+				{
+					"logical-name" : "minpack_module.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

@@ -1,0 +1,12 @@
+{
+	"modules" : 
+	{
+		"fsunlinsol_sptfqmr_mod.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/fortran_STATIC/fsunlinsol_sptfqmr_mod.mod",
+			"is-private" : false
+		}
+	},
+	"references" : {},
+	"usages" : {}
+}

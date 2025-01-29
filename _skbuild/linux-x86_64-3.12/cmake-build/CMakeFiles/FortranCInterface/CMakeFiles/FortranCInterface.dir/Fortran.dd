@@ -1,0 +1,7 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/FortranCInterface.dir/main.F.o: dyndep
+
+build CMakeFiles/FortranCInterface.dir/call_sub.f.o: dyndep
+
+build CMakeFiles/FortranCInterface.dir/call_mod.f90.o: dyndep | my_module.mod mymodule.mod
+

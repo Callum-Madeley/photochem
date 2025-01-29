@@ -1,0 +1,25 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/clima-build/src/CMakeFiles/clima.dir/radtran/clima_radtran_twostream.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/clima_radtran_twostream.mod",
+					"is-interface" : true,
+					"logical-name" : "clima_radtran_twostream.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "clima_const.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

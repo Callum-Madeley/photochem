@@ -1,0 +1,7 @@
+# ninja log v6
+4	50	1738075186032027000	CMakeFiles/ftest.dir/ftest.f90-pp.f90	dcea336825f91be3
+4	50	1738075186032027000	CMakeFiles/ftest.dir/ftest.f90.o.ddi	dcea336825f91be3
+50	81	1738075186107543000	CMakeFiles/ftest.dir/Fortran.dd	1fe5c6f4bc2e0f9f
+50	81	1738075186107543000	/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/_deps/cvode-build/F2003Test_DIR/CMakeFiles/ftest.dir/FortranModules.json	1fe5c6f4bc2e0f9f
+83	122	1738075186032027000	CMakeFiles/ftest.dir/ftest.f90.o	421d5ed73e12cc1a
+122	160	1738075186032027000	ftest	1d870f50fb05049d

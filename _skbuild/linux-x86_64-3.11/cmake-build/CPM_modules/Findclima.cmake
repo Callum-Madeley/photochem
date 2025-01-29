@@ -1,0 +1,3 @@
+include("/data/cjm267/photochem/_skbuild/linux-x86_64-3.11/cmake-build/cmake/CPM_0.40.2.cmake")
+CPMAddPackage("NAME;clima;VERSION;0.5.4;OPTIONS;BUILD_EXECUTABLE OFF;BUILD_WITH_OPENMP ON;SKBUILD TRUE;BUILD_PYTHON_CLIMA ON;PYTHON_CLIMA_DESTINATION photochem;GITHUB_REPOSITORY;Nicholaswogan/clima;GIT_TAG;v0.5.4;EXCLUDE_FROM_ALL;OFF")
+set(clima_FOUND TRUE)

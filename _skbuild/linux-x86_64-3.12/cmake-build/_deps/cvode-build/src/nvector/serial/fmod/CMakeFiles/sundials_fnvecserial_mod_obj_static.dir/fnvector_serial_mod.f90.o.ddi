@@ -1,0 +1,28 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/cvode-build/src/nvector/serial/fmod/CMakeFiles/sundials_fnvecserial_mod_obj_static.dir/fnvector_serial_mod.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "fortran_STATIC/fnvector_serial_mod.mod",
+					"is-interface" : true,
+					"logical-name" : "fnvector_serial_mod.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "fsundials_nvector_mod.mod"
+				},
+				{
+					"logical-name" : "fsundials_types_mod.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

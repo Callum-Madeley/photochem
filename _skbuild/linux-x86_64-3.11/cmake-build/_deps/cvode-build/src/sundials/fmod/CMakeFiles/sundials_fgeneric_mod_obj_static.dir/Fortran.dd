@@ -1,0 +1,19 @@
+ninja_dyndep_version = 1.0
+build _deps/cvode-build/src/sundials/fmod/CMakeFiles/sundials_fgeneric_mod_obj_static.dir/fsundials_futils_mod.f90.o | fortran_STATIC/fsundials_futils_mod.mod: dyndep
+  restat = 1
+
+build _deps/cvode-build/src/sundials/fmod/CMakeFiles/sundials_fgeneric_mod_obj_static.dir/fsundials_linearsolver_mod.f90.o | fortran_STATIC/fsundials_linearsolver_mod.mod: dyndep | fortran_STATIC/fsundials_matrix_mod.mod fortran_STATIC/fsundials_nvector_mod.mod fortran_STATIC/fsundials_types_mod.mod
+  restat = 1
+
+build _deps/cvode-build/src/sundials/fmod/CMakeFiles/sundials_fgeneric_mod_obj_static.dir/fsundials_matrix_mod.f90.o | fortran_STATIC/fsundials_matrix_mod.mod: dyndep | fortran_STATIC/fsundials_nvector_mod.mod fortran_STATIC/fsundials_types_mod.mod
+  restat = 1
+
+build _deps/cvode-build/src/sundials/fmod/CMakeFiles/sundials_fgeneric_mod_obj_static.dir/fsundials_nonlinearsolver_mod.f90.o | fortran_STATIC/fsundials_nonlinearsolver_mod.mod: dyndep | fortran_STATIC/fsundials_nvector_mod.mod fortran_STATIC/fsundials_types_mod.mod
+  restat = 1
+
+build _deps/cvode-build/src/sundials/fmod/CMakeFiles/sundials_fgeneric_mod_obj_static.dir/fsundials_nvector_mod.f90.o | fortran_STATIC/fsundials_nvector_mod.mod: dyndep | fortran_STATIC/fsundials_types_mod.mod
+  restat = 1
+
+build _deps/cvode-build/src/sundials/fmod/CMakeFiles/sundials_fgeneric_mod_obj_static.dir/fsundials_types_mod.f90.o | fortran_STATIC/fsundials_types_mod.mod: dyndep
+  restat = 1
+

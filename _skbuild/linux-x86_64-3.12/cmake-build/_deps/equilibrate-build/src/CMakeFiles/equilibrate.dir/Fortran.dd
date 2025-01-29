@@ -1,0 +1,16 @@
+ninja_dyndep_version = 1.0
+build _deps/equilibrate-build/src/CMakeFiles/equilibrate.dir/equilibrate_version.f90.o | modules/equilibrate_version.mod: dyndep
+  restat = 1
+
+build _deps/equilibrate-build/src/CMakeFiles/equilibrate.dir/equilibrate_yaml.f90.o | modules/equilibrate_yaml.mod: dyndep | modules/equilibrate_const.mod modules/fortran_yaml_c.mod modules/fortran_yaml_c_types.mod
+  restat = 1
+
+build _deps/equilibrate-build/src/CMakeFiles/equilibrate.dir/equilibrate_const.f90.o | modules/equilibrate_const.mod: dyndep
+  restat = 1
+
+build _deps/equilibrate-build/src/CMakeFiles/equilibrate.dir/equilibrate_cea.f90.o | modules/equilibrate_cea.mod: dyndep | modules/equilibrate_const.mod modules/equilibrate_yaml.mod
+  restat = 1
+
+build _deps/equilibrate-build/src/CMakeFiles/equilibrate.dir/equilibrate.f90.o | modules/equilibrate.mod: dyndep | modules/equilibrate_cea.mod modules/equilibrate_const.mod modules/equilibrate_version.mod
+  restat = 1
+

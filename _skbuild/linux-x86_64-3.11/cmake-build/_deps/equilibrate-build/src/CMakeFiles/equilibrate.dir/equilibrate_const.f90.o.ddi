@@ -1,0 +1,25 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/equilibrate-build/src/CMakeFiles/equilibrate.dir/equilibrate_const.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "modules/equilibrate_const.mod",
+					"is-interface" : true,
+					"logical-name" : "equilibrate_const.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "iso_fortran_env.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

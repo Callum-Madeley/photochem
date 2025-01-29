@@ -1,0 +1,12 @@
+{
+	"modules" : 
+	{
+		"equilibrate_c_api.mod" : 
+		{
+			"bmi" : "/data/cjm267/photochem/_skbuild/linux-x86_64-3.12/cmake-build/modules/equilibrate_c_api.mod",
+			"is-private" : false
+		}
+	},
+	"references" : {},
+	"usages" : {}
+}

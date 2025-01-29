@@ -1,0 +1,28 @@
+{
+	"revision" : 0,
+	"rules" : 
+	[
+		{
+			"outputs" : [],
+			"primary-output" : "_deps/cvode-build/src/sundials/fmod/CMakeFiles/sundials_fgeneric_mod_obj_static.dir/fsundials_matrix_mod.f90.o",
+			"provides" : 
+			[
+				{
+					"compiled-module-path" : "fortran_STATIC/fsundials_matrix_mod.mod",
+					"is-interface" : true,
+					"logical-name" : "fsundials_matrix_mod.mod"
+				}
+			],
+			"requires" : 
+			[
+				{
+					"logical-name" : "fsundials_nvector_mod.mod"
+				},
+				{
+					"logical-name" : "fsundials_types_mod.mod"
+				}
+			]
+		}
+	],
+	"version" : 0
+}

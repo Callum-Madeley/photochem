@@ -3,27 +3,16 @@ submodule (photochem_input) photochem_input_read
   
 contains
   
-  module subroutine read_all_files(mechanism_file, s, flux_file, atmosphere_txt, back_gas, &
-                                   dat, var, err)
+  module subroutine read_all_files(mechanism_file, s, flux_file, atmosphere_txt, dat, var, err)
     character(len=*), intent(in) :: mechanism_file
     type(PhotoSettings), intent(in) :: s
     character(len=*), intent(in) :: flux_file
     character(len=*), intent(in) :: atmosphere_txt
-    logical, intent(in) :: back_gas
     type(PhotochemData), intent(inout) :: dat
     type(PhotochemVars), intent(inout) :: var
     character(:), allocatable, intent(out) :: err
     
     ! stuff dat needs before entering get_photomech
-    dat%back_gas = back_gas
-    if (dat%back_gas) then
-      if (allocated(s%back_gas_name)) then
-        dat%back_gas_name = s%back_gas_name
-      else
-        err = 'A background gas is required but not specified in '//trim(s%filename)
-        return
-      endif
-    endif
     dat%nsl = s%nsl
     dat%SL_names = s%SL_names
 
@@ -77,8 +66,10 @@ contains
   end subroutine
   
   subroutine get_rxmechanism(mapping, infile, dat, var, err)
+    use photochem_types, only: ReverseRate
     use photochem_enum, only: CondensingParticle, ReactionParticle
     use photochem_enum, only: MieParticle, FractalParticle 
+    use photochem_enum, only: PhotolysisRateType, ReverseRateType
     use clima_saturationdata, only: SaturationData
     class (type_dictionary), intent(in), pointer :: mapping
     character(len=*), intent(in) :: infile
@@ -97,7 +88,7 @@ contains
     ! temporary work variables
     character(len=str_len) :: tmpchar
     character(len=str_len) :: tmp
-    character(len=:), allocatable :: rxstring, back_gas_name_tmp
+    character(len=:), allocatable :: rxstring
     integer :: i, ii, j, k, kk, l, ind(1)
     logical :: reverse
     ! all_species causes a small memory leak. Not sure how to free the memory properly
@@ -266,13 +257,7 @@ contains
       dat%ng = dat%ng + 1
     enddo
     
-    if (dat%back_gas) then
-      dat%nll = dat%ng - dat%nsl - 1 ! minus 1 for background
-      back_gas_name_tmp = dat%back_gas_name
-    else
-      dat%nll = dat%ng - dat%nsl
-      back_gas_name_tmp = "Not a => gas!"
-    endif
+    dat%nll = dat%ng - dat%nsl
     
     dat%ng_1 = dat%npq + 1 ! the long lived gas index
     ! dat%nq is the last ll gas index
@@ -326,8 +311,6 @@ contains
           if (ind(1) /= 0) then ! short lived species
             j = dat%nq + l 
             l = l + 1
-          elseif (tmpchar == back_gas_name_tmp) then ! background gas
-            j = dat%nsp
           else ! long lived species
             j = kk
             kk = kk + 1
@@ -372,13 +355,6 @@ contains
       err = 'IOError: One of the short lived species is not in the file '//trim(infile)
       return
     endif
-    if (dat%back_gas) then
-      ind = findloc(dat%species_names,dat%back_gas_name)
-      if (ind(1) == 0) then
-        err = 'IOError: The specified background gas is not in '//trim(infile)
-        return
-      endif
-    endif
     i = check_for_duplicates(dat%species_names)
     if (i /= 0) then
       err = 'Species "'//trim(dat%species_names(i))//'" is a duplicate in '//trim(infile)
@@ -405,7 +381,7 @@ contains
             err = "Particle "//trim(dat%particle_names(i))// &
                   " can not be made from "//trim(dat%particle_gas_phase(i))// &
                   " because "//trim(dat%particle_gas_phase(i))//" is"// &
-                  " is a particle, short-lived species, or background gas."
+                  " is a particle or is short-lived species."
             return
           else
             dat%particle_gas_phase_ind(i) = ind(1)
@@ -488,6 +464,9 @@ contains
           allocate(dat%rx(i)%prod_sp_inds(dat%rx(i)%nprod))
           dat%rx(i)%react_sp_inds = dat%rx(j)%prod_sp_inds
           dat%rx(i)%prod_sp_inds = dat%rx(j)%react_sp_inds
+          
+          allocate(ReverseRate::dat%rx(i)%rp)
+          dat%rx(i)%rp%rxtype = ReverseRateType
 
           k = k + 1
         endif
@@ -548,14 +527,14 @@ contains
     ! photolysis
     dat%kj = 0
     do i = 1, dat%nrF
-      if (dat%rx(i)%rp%rxtype == 0) then
+      if (dat%rx(i)%rp%rxtype == PhotolysisRateType) then
         dat%kj = dat%kj + 1
       endif
     enddo
     allocate(dat%photonums(dat%kj))
     j = 1
     do i = 1, dat%nrF
-      if (dat%rx(i)%rp%rxtype == 0) then
+      if (dat%rx(i)%rp%rxtype == PhotolysisRateType) then
         dat%photonums(j) = i
         j = j + 1
       endif
@@ -586,7 +565,7 @@ contains
   
   subroutine unpack_settings(infile, s, dat, var, err)
     use photochem_enum, only: CondensingParticle
-    use photochem_enum, only: VelocityBC, DensityBC, MixingRatioBC, PressureBC
+    use photochem_enum, only: VelocityBC, DensityBC, PressureBC
     use photochem_enum, only: DiffusionLimHydrogenEscape, ZahnleHydrogenEscape, NoHydrogenEscape
     use photochem_types, only: PhotoSettings
     character(len=*), intent(in) :: infile
@@ -622,16 +601,6 @@ contains
     !!!!!!!!!!!!!!
     !!! planet !!!
     !!!!!!!!!!!!!!
-    ! dat%back_gas
-    ! dat%back_gas_name
-    ! already set earlier
-    if (dat%back_gas) then
-      if (.not. allocated(s%P_surf)) then
-        err = 'The settings file does not contain a "surface-pressure"'
-        return
-      endif
-      var%surface_pressure = s%P_surf
-    endif
     dat%planet_mass = s%planet_mass
     dat%planet_radius = s%planet_radius
     var%surface_albedo = s%surface_albedo
@@ -671,13 +640,6 @@ contains
 
         allocate(dat%H_escape_coeff)
         dat%H_escape_coeff = zahnle_Hescape_coeff(s%H_escape_S1)
-
-        if (dat%back_gas) then
-          if (dat%back_gas_name == "H2") then
-            err = "zahnle hydrogen escape does not work when the background gas is H2."
-            return
-          endif
-        endif
 
       endblock; endif
 
@@ -770,23 +732,12 @@ contains
     !!!!!!!!!!!!!!!!!!!!!!!!!!!
     !!! boundary-conditions !!!
     !!!!!!!!!!!!!!!!!!!!!!!!!!!
-    
-    if (dat%back_gas) then
-      ind = findloc(dat%species_names,trim(dat%back_gas_name))
-      dat%back_gas_ind = ind(1)
-      dat%back_gas_mu = dat%species_mass(ind(1))
-    endif
-    
     allocate(var%lowerboundcond(dat%nq))
     allocate(var%lower_vdep(dat%nq))
     allocate(var%lower_flux(dat%nq))
     allocate(var%lower_dist_height(dat%nq))
-    if (dat%back_gas) then
-      allocate(var%lower_fix_mr(dat%nq))
-    else
-      allocate(var%lower_fix_den(dat%nq))
-      allocate(var%lower_fix_press(dat%nq))
-    endif
+    allocate(var%lower_fix_den(dat%nq))
+    allocate(var%lower_fix_press(dat%nq))
     allocate(var%upperboundcond(dat%nq))
     allocate(var%upper_veff(dat%nq))
     allocate(var%upper_flux(dat%nq))
@@ -815,13 +766,6 @@ contains
         ' in settings file is not in the reaction mechanism file.'
         return 
       endif
-      if (dat%back_gas) then
-        if (ind(1) == dat%back_gas_ind) then ! can't be background gas
-          err = "IOError: Species "//trim(s%sp_names(j))// &
-          ' in settings file is the background gas, and can not have boundary conditions.'
-          return
-        endif
-      endif
       
       if (s%sp_types(j) == 'long lived') then
       
@@ -829,12 +773,8 @@ contains
         var%lower_vdep(ind(1)) = s%lbcs(j)%vel
         var%lower_flux(ind(1)) = s%lbcs(j)%flux
         var%lower_dist_height(ind(1)) = s%lbcs(j)%height
-        if (dat%back_gas) then
-          var%lower_fix_mr(ind(1)) = s%lbcs(j)%mix
-        else
-          var%lower_fix_den(ind(1)) = s%lbcs(j)%den
-          var%lower_fix_press(ind(1)) = s%lbcs(j)%press
-        endif
+        var%lower_fix_den(ind(1)) = s%lbcs(j)%den
+        var%lower_fix_press(ind(1)) = s%lbcs(j)%press
         
         var%upperboundcond(ind(1)) = s%ubcs(j)%bc_type
         var%upper_veff(ind(1)) = s%ubcs(j)%vel
@@ -849,20 +789,10 @@ contains
     ! Make sure that upper boundary condition for H and H2 are
     ! effusion velocities, if diffusion limited escape
     if (dat%H_escape_type == DiffusionLimHydrogenEscape) then
-      if (dat%back_gas) then
-        if (dat%back_gas_name /= "H2") then
-          if (var%upperboundcond(dat%LH2) /= VelocityBC) then
-            err = "IOError: H2 must have a have a effusion velocity upper boundary"// &
-                  " for diffusion limited hydrogen escape"
-            return
-          endif
-        endif
-      else
-        if (var%upperboundcond(dat%LH2) /= VelocityBC) then
-          err = "IOError: H2 must have a have a effusion velocity upper boundary"// &
-                " for diffusion limited hydrogen escape"
-          return
-        endif
+      if (var%upperboundcond(dat%LH2) /= VelocityBC) then
+        err = "IOError: H2 must have a have a effusion velocity upper boundary"// &
+              " for diffusion limited hydrogen escape"
+        return
       endif
       if (var%upperboundcond(dat%LH) /= VelocityBC) then
         err = "IOError: H must have a have a effusion velocity upper boundary"// &
@@ -881,23 +811,6 @@ contains
           return
         endif
       enddo
-    endif
-
-    ! make sure bc work for the model
-    if (dat%back_gas) then
-      if (any(var%lowerboundcond == DensityBC)) then
-        err = 'Fixed density boundary conditions are not allowed for class "Atmosphere".'
-        return
-      endif
-      if (any(var%lowerboundcond == PressureBC)) then
-        err = 'Fixed pressure boundary conditions are not allowed for class "Atmosphere".'
-        return
-      endif
-    else
-      if (any(var%lowerboundcond == MixingRatioBC)) then
-        err = 'Fixed mixing ratio boundary conditions are not allowed for class "EvoAtmosphere".'
-        return
-      endif
     endif
 
     ! check for SL nonlinearities
@@ -1088,6 +1001,7 @@ contains
   end subroutine
   
   subroutine reaction_string(dat,rxn,rxstring)
+    use photochem_enum, only: ThreeBodyRateType, FalloffRateType
     type(PhotochemData), intent(in) :: dat
     integer, intent(in) :: rxn
     character(len=:), allocatable, intent(out) :: rxstring
@@ -1106,7 +1020,7 @@ contains
     k = dat%rx(rxn)%react_sp_inds(dat%rx(rxn)%nreact)
     rxstring = rxstring // trim(dat%species_names(k))//' => '
     
-    if (dat%rx(i)%rp%rxtype == 2 .or. dat%rx(i)%rp%rxtype == 3) then
+    if (dat%rx(i)%rp%rxtype == ThreeBodyRateType .or. dat%rx(i)%rp%rxtype == FalloffRateType) then
       rxstring = rxstring(1:len(rxstring)-4) //(' + M'//' => ')
     endif
     
@@ -1117,12 +1031,13 @@ contains
     k = dat%rx(rxn)%prod_sp_inds(dat%rx(rxn)%nprod)
     rxstring = rxstring // trim(dat%species_names(k))
     
-    if (dat%rx(i)%rp%rxtype == 2 .or. dat%rx(i)%rp%rxtype == 3) then
+    if (dat%rx(i)%rp%rxtype == ThreeBodyRateType .or. dat%rx(i)%rp%rxtype == FalloffRateType) then
       rxstring = rxstring //' + M'
     endif
   end subroutine
   
   subroutine compare_rxtype_string(tmp, eqr, eqp, reverse, rxtype_int, err)
+    use photochem_enum, only: PhotolysisRateType, ElementaryRateType, ThreeBodyRateType, FalloffRateType, PressDependentRateType
     character(len=*), intent(in) :: tmp
     character(len=s_str_len), allocatable, intent(in) :: eqr(:), eqp(:)
     logical, intent(in) :: reverse
@@ -1137,15 +1052,15 @@ contains
     kk = .false.
     j = .false.
     jj = .false.
-    if (rxtype_int == 0) then
+    if (rxtype_int == PhotolysisRateType) then
       rxtype = 'photolysis'
-    elseif (rxtype_int == 1) then
+    elseif (rxtype_int == ElementaryRateType) then
       rxtype = 'elementary'
-    elseif (rxtype_int == 2) then
+    elseif (rxtype_int == ThreeBodyRateType) then
       rxtype = 'three-body'
-    elseif (rxtype_int == 3) then
+    elseif (rxtype_int == FalloffRateType) then
       rxtype = 'falloff'
-    elseif (rxtype_int == 4) then
+    elseif (rxtype_int == PressDependentRateType) then
       rxtype = 'pressure-dependent-Arrhenius'
     else
       err = 'Internal error in Photochem involving "compare_rxtype_string". Report this bug!'
@@ -1368,6 +1283,7 @@ contains
   
   subroutine get_reaction_sp_nums(dat, rx_str, rx, reverse, err)
     use photochem_types, only: Reaction
+    use photochem_enum, only: ThreeBodyRateType, FalloffRateType
     type(PhotochemData), intent(in) :: dat
     character(len=*), intent(in) :: rx_str
     type(Reaction), intent(inout) :: rx ! already has rate parameters
@@ -1384,7 +1300,7 @@ contains
     call compare_rxtype_string(rx_str, eqr1, eqp1, reverse, rx%rp%rxtype, err)
     if (allocated(err)) return
     
-    if (rx%rp%rxtype == 2 .or. rx%rp%rxtype == 3) then
+    if (rx%rp%rxtype == ThreeBodyRateType .or. rx%rp%rxtype == FalloffRateType) then
       ! remove the M
       eqr = eqr1(1:size(eqr1)-1)
       eqp = eqp1(1:size(eqp1)-1)
@@ -1457,6 +1373,7 @@ contains
   
   subroutine get_rateparams(dat, reaction_d, infile, rx, err)
     use photochem_enum, only: NoFalloff, TroeWithoutT2Falloff, TroeWithT2Falloff, JPLFalloff
+    use photochem_enum, only: PhotolysisRateType, ElementaryRateType, ThreeBodyRateType, FalloffRateType, PressDependentRateType
     use photochem_types, only: Reaction, BaseRate, ElementaryRate, ThreeBodyRate, FalloffRate, PhotolysisRate, PressDependentRate
     type(PhotochemData), intent(in) :: dat
     class(type_dictionary), intent(in) :: reaction_d
@@ -1477,19 +1394,19 @@ contains
     
     if (rxtype_str == 'photolysis') then
       allocate(PhotolysisRate::rx%rp)
-      rx%rp%rxtype = 0
+      rx%rp%rxtype = PhotolysisRateType
     elseif (rxtype_str == 'elementary') then
       allocate(ElementaryRate::rx%rp)
-      rx%rp%rxtype = 1
+      rx%rp%rxtype = ElementaryRateType
     elseif (rxtype_str == 'three-body') then
       allocate(ThreeBodyRate::rx%rp)
-      rx%rp%rxtype = 2
+      rx%rp%rxtype = ThreeBodyRateType
     elseif (rxtype_str == 'falloff') then
       allocate(FalloffRate::rx%rp)
-      rx%rp%rxtype = 3
+      rx%rp%rxtype = FalloffRateType
     elseif (rxtype_str == 'pressure-dependent-Arrhenius') then
       allocate(PressDependentRate::rx%rp)
-      rx%rp%rxtype = 4
+      rx%rp%rxtype = PressDependentRateType
     else
       err = 'IOError: reaction type '//trim(rxtype_str)//' is not a valid reaction type.'
       return
@@ -1994,7 +1911,7 @@ contains
       return
     endif
 
-    call h%open(filename)
+    call h%open(filename,'r')
 
     call check_h5_dataset(h, 'wavl', 1, H5T_FLOAT_F, filename, err)
     if (allocated(err)) then

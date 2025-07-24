@@ -74,27 +74,12 @@ contains
     endif
     var%edd = 10.0_dp**var%edd
 
-    if (dat%back_gas) then
-      do i = 1,dat%nq
-        call interp(var%nz, dat%nzf, var%z, dat%z_file,&
-                    log10(abs(dat%mix_file(i,:))), var%usol_init(i,:), ierr)
-        if (ierr /= 0) then
-          err = 'Subroutine interp returned an error.'
-          return
-        endif
-      enddo
-      var%usol_init = 10.0_dp**var%usol_init
-
+    if (dat%conserving_init) then
+      call interp2atmosfile_mixconserving(dat, var, err)
+      if (allocated(err)) return
     else
-
-      if (dat%conserving_init) then
-        call interp2atmosfile_mixconserving(dat, var, err)
-        if (allocated(err)) return
-      else
-        call interp2atmosfile_mix(dat, var, err)
-        if (allocated(err)) return
-      endif
-
+      call interp2atmosfile_mix(dat, var, err)
+      if (allocated(err)) return
     endif
     
     if (dat%there_are_particles) then
@@ -337,6 +322,13 @@ contains
     if (dat%reverse) then
       allocate(vars%gibbs_energy(vars%nz,dat%ng))
     endif
+
+    allocate(vars%tauc(vars%nz,dat%nw))
+    vars%tauc = 0.0_dp
+    allocate(vars%w0c(vars%nz,dat%nw))
+    vars%w0c = 0.0_dp
+    allocate(vars%g0c(vars%nz,dat%nw))
+    vars%g0c = 0.0_dp
 
   end subroutine
 

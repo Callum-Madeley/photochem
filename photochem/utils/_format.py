@@ -1,5 +1,6 @@
 import yaml
 from photochem_clima_data import DATA_DIR
+import copy
 
 try:
     from yaml import CLoader as Loader, CDumper as Dumper
@@ -64,7 +65,7 @@ def FormatReactions_main(data):
             if data['species'][i]['name'] == False:
                 data['species'][i]['name'] = "NO"
             
-            order = ['name', 'composition', 'condensate', 'thermo','note']
+            order = ['name', 'composition', 'condensate', 'thermo', 'saturation','note']
             copy = data['species'][i].copy()
             data['species'][i].clear()
             for key in order:
@@ -85,10 +86,17 @@ def FormatReactions_main(data):
                 
                 data['species'][i]['thermo']['data'] = [blockseqtrue(a) for a in blockseqtrue(data['species'][i]['thermo']['data'])]
 
+            if 'saturation' in data['species'][i].keys():
+                flowstyle = ['parameters','vaporization','sublimation','super-critical']
+                for key in flowstyle:
+                    data['species'][i]['saturation'][key] = flowmap(data['species'][i]['saturation'][key])
+
     # Particles
     if 'particles' in data:
         for i in range(len(data['particles'])):
             data['particles'][i]['composition'] = flowmap(data['particles'][i]['composition'])
+            if 'formation' not in data['particles'][i]:
+                continue
             if data['particles'][i]['formation'] == 'reaction':
                 flowstyle = ['rate-constant','low-P-rate-constant','high-P-rate-constant','efficiencies']
                 for key in flowstyle:
@@ -187,7 +195,9 @@ def species_in_reaction(rx):
     react, prod = [a.replace(' ','').split('+') for a in rx1.split('=>')]
     return react + prod
 
-def mechanism_dict_with_atoms(dat, atoms_names, exclude_species=[], remove_particles=False, remove_reaction_particles=False):
+def mechanism_dict_with_atoms(dat_orig, atoms_names, exclude_species=[], remove_particles=False, remove_reaction_particles=False):
+
+    dat = copy.deepcopy(dat_orig)
 
     atoms = []
     exclude_atoms = []
@@ -216,6 +226,8 @@ def mechanism_dict_with_atoms(dat, atoms_names, exclude_species=[], remove_parti
         if not exclude:
             species.append(sp)
 
+    if "particles" in dat and remove_particles:
+        del dat['particles']
     if "particles" in dat:
         particles = []
         for i,sp in enumerate(dat['particles']):
@@ -266,7 +278,7 @@ def mechanism_dict_with_atoms(dat, atoms_names, exclude_species=[], remove_parti
     out = dat
     out['atoms'] = atoms
     out['species'] = species
-    if 'particles' in dat and not remove_particles:
+    if 'particles' in dat:
         out['particles'] = particles
     if 'reactions' in dat:
         out['reactions'] = reactions
@@ -314,7 +326,7 @@ def resave_mechanism_with_atoms(
     with open(outfile,'w') as f:
         yaml.dump(out,f,Dumper=MyDumper,sort_keys=False,width=70)
 
-def generate_zahnle_earth_thermo(outfile='zahnle_earth_thermo.yaml', atoms_names=None, exclude_species=[]):
+def generate_zahnle_earth_thermo(outfile='zahnle_earth_thermo.yaml', atoms_names=None, exclude_species=[], remove_particles=False):
     """Generates a thermodynamic file for equilibrium solving that includes
     condensible species (e.g., H2O condensate).
 
@@ -326,6 +338,8 @@ def generate_zahnle_earth_thermo(outfile='zahnle_earth_thermo.yaml', atoms_names
         List of atoms to keep. By default all atoms in the mechanism are kept
     exclude_species : list, optional
         List of species to exclude.
+    remove_particles : bool, optional
+        If True, then particles (i.e. condensates) will be removed, by default False.
     """    
 
     rx_folder = DATA_DIR+'/reaction_mechanisms/'
@@ -342,8 +356,9 @@ def generate_zahnle_earth_thermo(outfile='zahnle_earth_thermo.yaml', atoms_names
     del dat['particles']
     del dat['reactions']
 
-    for i,sp in enumerate(dat1['species']):
-        dat['species'].append(sp)
+    if not remove_particles:
+        for i,sp in enumerate(dat1['species']):
+            dat['species'].append(sp)
 
     if atoms_names is None:
         atoms_names = [a['name'] for a in dat['atoms']]
@@ -379,7 +394,7 @@ def zahnle_rx_and_thermo_files(
     remove_particles : bool, optional
         If True, then particles will be removed, by default False.
     remove_reaction_particles : bool, optional
-        If True, then reactions particles are removed, by default True.
+        If True, then reactions particles are removed, by default False.
     """
 
     zahnle_earth = DATA_DIR+'/reaction_mechanisms/zahnle_earth.yaml'
@@ -389,4 +404,4 @@ def zahnle_rx_and_thermo_files(
 
     # Thermodynamics
     if thermo_filename is not None:
-        generate_zahnle_earth_thermo(thermo_filename, atoms_names, exclude_species)
+        generate_zahnle_earth_thermo(thermo_filename, atoms_names, exclude_species, remove_particles)

@@ -1,0 +1,3 @@
+# U of A Photochem Workshop
+
+This repository contains tutorials for the [Photochem](https://github.com/Nicholaswogan/photochem) software. These notebooks were originally used in a workshop on Photochem on Nov. 5th & 6th of 2024, but now serve as an additional resource for understanding Photochem. First, check out the `2_Installation` directory to learn how to install Photochem. Next, checkout the tutorials in the remaining directories.
